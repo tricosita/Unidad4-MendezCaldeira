@@ -24,7 +24,7 @@ static constexpr float JUMP_VELOCITY = 1500.0f; // px/s (mayo numero mayor salto
 static constexpr float GROUND_Y = H * 0.90f;    // altura del suelo 
 
 // Escala visual del sprite
-static constexpr float SPRITE_SCALE = 6.0f;     // aumentá o bajá según el tamaño de tus PNGs
+static constexpr float SPRITE_SCALE = 6.0f;     // aumenta o baja según el tamaño de tus PNGs
 
 
 // --- Moon (boton) ---
@@ -64,7 +64,7 @@ struct FrameListAnim {
 
 // ---------------- Player minimalista: corre en lugar + salto ----------------
 struct Player {
-    // usa (x, y) como el punto de los “pies” (centro de apoyo)
+    // usa (x, y) como el punto de los pies (centro de apoyo)
     Vector2 pos{ W * 0.5f, GROUND_Y +200.0f}; //(altura en relacion al suelo)
     float   velY = 0.0f;
     float velX = 0.0f;      // velocidad horizontal actual (px/s)
